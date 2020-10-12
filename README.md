@@ -21,3 +21,7 @@ To build this project you will need:
     ./demo
 ```
 ![Model](https://github.com/ktgiahieu/Fast-PPF/blob/master/images/model.PNG)
+
+![Scene 0](https://github.com/ktgiahieu/Fast-PPF/blob/master/images/scene0.PNG)
+
+![Scene 1](https://github.com/ktgiahieu/Fast-PPF/blob/master/images/scene1.PNG)
