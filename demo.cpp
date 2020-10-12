@@ -1,5 +1,5 @@
 //Author: Khuong Thanh Gia Hieu
-//Bach Khoa University - CK16KSCD
+//Viet Nam - Bach Khoa University - CK16KSCD
 
 #include "PPF.h"
 #include <thread>
@@ -15,12 +15,12 @@ int main()
 	std::cout << "Descriptor type: " << descr->getType() << endl;
 	
 	//Load model
-	descr->setModelPath("../../data/model/bi/6914.STL");
+	descr->setModelPath("../data/model/bi/6914.STL");
 	std::cout << "Done Preparation ... !" << std::endl;
 
 	//Load scene
 	pcl::PointCloud<pcl::PointXYZRGBA>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZRGBA>);
-	if (pcl::io::loadPCDFile<pcl::PointXYZRGBA> ("../../data/scene/bi/scene0.pcd", *cloud) == -1) //* load the file
+	if (pcl::io::loadPCDFile<pcl::PointXYZRGBA> ("../data/scene/bi/scene0.pcd", *cloud) == -1) //* load the file
     {
 		PCL_ERROR ("Couldn't read file\n");
 		return (-1);
