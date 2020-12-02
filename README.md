@@ -18,7 +18,7 @@ To build this project you will need:
     cd build
     cmake ..
     make
-    ./demo
+    ./FastPPF
 ```
 ![Model](https://github.com/ktgiahieu/Fast-PPF/blob/master/images/model.PNG)
 

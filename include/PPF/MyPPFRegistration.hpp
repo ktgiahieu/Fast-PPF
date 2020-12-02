@@ -2,6 +2,7 @@
 #ifndef PCL_MY_PPF_REGISTRATION_H_
 #define PCL_MY_PPF_REGISTRATION_H_
 
+#include <pcl/common/common.h>
 #include <pcl/registration/boost.h>
 #include <pcl/registration/registration.h>
 #include <pcl/features/ppf.h>
@@ -44,9 +45,9 @@ namespace pcl
       typedef std::shared_ptr<MyPPFHashMapSearch> Ptr;*/
 
 	  using FeatureHashMapType = std::unordered_multimap<HashKeyStruct, std::pair<std::size_t, std::size_t>, HashKeyStruct>;
-      using FeatureHashMapTypePtr = shared_ptr<FeatureHashMapType>;
-      using Ptr = shared_ptr<MyPPFHashMapSearch>;
-      using ConstPtr = shared_ptr<const MyPPFHashMapSearch>;
+      using FeatureHashMapTypePtr = std::shared_ptr<FeatureHashMapType>;
+      using Ptr = std::shared_ptr<MyPPFHashMapSearch>;
+      using ConstPtr = std::shared_ptr<const MyPPFHashMapSearch>;
 
       /** \brief Constructor for the MyPPFHashMapSearch class which sets the two step parameters for the enclosed data structure
        * \param angle_discretization_step the step value between each bin of the hash map for the angular values
@@ -478,8 +479,9 @@ pcl::MyPPFRegistration<PointSource, PointTarget>::verifyPoses(typename pcl::MyPP
 
 	for (size_t pose_index = 0; pose_index < poses.size(); ++pose_index)
 	{
-		pcl::PointCloud<PointSource>::Ptr instance(new pcl::PointCloud<PointSource>());
-		pcl::transformPointCloud(*input_, *instance, poses[pose_index].pose);
+		pcl::PointCloud<pcl::PointXYZ>::Ptr instance(new pcl::PointCloud<pcl::PointXYZ>());
+		pcl::copyPointCloud(*input_, *instance);		
+		pcl::transformPointCloud(*instance, *instance, poses[pose_index].pose);
 
 		for (size_t model_point = 0; model_point < instance->points.size(); ++model_point)
 		{

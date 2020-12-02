@@ -5,6 +5,7 @@
 #include "meshSampling.h"
 #include "HPR.h"
 #include "MyPPFRegistration.hpp"
+#include <mutex>
 
 class DescriptorPPF
 {
