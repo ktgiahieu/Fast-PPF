@@ -5,7 +5,7 @@ The project takes a .STL mesh model as an input, then it will find every matches
 
 ### Experiment video
 This is my Graduate Thesis video which uses this repo for object recognition.
-[![Video(YouTube)](https://github.com/ktgiahieu/Fast-PPF/blob/master/images/video.png)](https://www.youtube.com/watch?v=udqj9vNyUDY)
+[![Video(YouTube)](https://github.com/ktgiahieu/Fast-PPF/blob/master/images/video.png | width=100)](https://www.youtube.com/watch?v=udqj9vNyUDY)
 
 
 ### Requirements
