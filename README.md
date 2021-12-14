@@ -4,6 +4,7 @@ FastPPF is an implementation of the Fast and Robust Pose Estimation Algorithm fo
 The project takes a .STL mesh model as an input, then it will find every matches available in the scene provided as a .pcd file.
 
 ### Experiment video
+This is my Graduate Thesis video which uses this repo for object recognition.
 [![Video(YouTube)](https://github.com/ktgiahieu/Fast-PPF/blob/master/images/video.png)](https://www.youtube.com/watch?v=udqj9vNyUDY)
 
 
