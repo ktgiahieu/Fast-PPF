@@ -9,6 +9,7 @@ This is my Graduate Thesis video which uses this repo for object recognition.
 
 
 ### Requirements
+CURRENTLY THERE IS A BUG WITH THE PCL IMPLEMENTATION OF PPF CALCULATION, PLEASE REFER TO [THIS ISSUE](https://github.com/ktgiahieu/Fast-PPF/issues/1#issuecomment-1080097065) TO REBUILD THE PCL LIBRARY TO OBTAIN CORRECT RESULTS.
 To build this project you will need:
 
 * Point Cloud Library (PCL 1.7)
