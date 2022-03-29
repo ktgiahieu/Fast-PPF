@@ -1,5 +1,5 @@
 # Fast-PPF
-FastPPF is an implementation of the [Fast and Robust Pose Estimation Algorithm for Bin Picking Using Point Pair Feature](https://ieeexplore.ieee.org/document/8545432) from [Mingyu Li et al.](https://ieeexplore.ieee.org/author/37086527848).
+FastPPF is an implementation of the [Fast and Robust Pose Estimation Algorithm for Bin Picking Using Point Pair Feature](https://ieeexplore.ieee.org/document/8545432) from [Mingyu Li](https://ieeexplore.ieee.org/author/37086527848) et al.
 
 The project takes a .STL mesh model as an input, then it will find every matches available in the scene provided as a .pcd file.
 
